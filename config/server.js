@@ -15,5 +15,8 @@ consign()
 	.then('config/dbConnection.js') // conexão com banco;
 	.then('app/models')
 	.into(app); // Consign reconhece todos os arquivos da routes;
+var express = require('express'); // Importa o express;
+
+var app = express();
 
 module.exports = app; // Módulo retorna a variável app;
