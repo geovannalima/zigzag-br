@@ -6,8 +6,11 @@ HomeRoute(app);
 app.listen(5000, function () {
   console.log("Servidor on");
 });
+<<<<<<< HEAD
 var app = require('./config/server');
 
 app.listen(5000, function(){
 	console.log("Servidor on");
 });
+=======
+>>>>>>> a956aa1... Importação
