@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 module.exports = function(app)
 {
 	app.get('/giria', function(req,res)
@@ -12,7 +11,6 @@ module.exports = function(app)
 		})
 	});
 }
-=======
 /*giria e add giria*/
 module.exports = function (app) {
   app.get("/add_giria", function (req, res) {
@@ -22,4 +20,3 @@ module.exports = function (app) {
 	
 	});
 };
->>>>>>> a956aa1... Importação
