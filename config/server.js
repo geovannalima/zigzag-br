@@ -2,6 +2,7 @@ var express = require('express'); // Importa o express para o projeto;
 var consign = require('consign'); // Importa o módulo do consign;
 var bodyParser = require('body-parser'); // 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var app = express(); // Chama a função para executar o express;
 
@@ -19,6 +20,8 @@ consign()
 var express = require('express'); // Importa o express;
 =======
 >>>>>>> b696285... Segundo commit: css, select e index
+=======
+>>>>>>> cfdcb545e3e2ce642a9e07c5d9752bac2242412b
 
 var app = express(); // Chama a função para executar o express;
 
