@@ -1,28 +1,36 @@
-module.exports = function(app)
-{
-	app.get('/giria', function(req,res)
+module.exports = function(app) {
+	app.get('/girias', function(req,res)
 	{
 		var connection = app.config.dbConnection();
-		var expressoesModel = app.app.models.expressoesModel;
+		var expressoesDAO = app.app.models.expressoesDAO;
 
-		expressoesModel.getGiria(connection, function(error, result)
+		noticiasModel.getGiria(connection, function(error, result)
 		{
-			res.render('girias/giria', {girias : result});
+			res.render('girias/girias', {girias : result});
 		})
 	});
 }
-/*giria e add giria*/
-module.exports = function (app) {
-  	app.get("/add_giria", function (req, res) {
-    	res.render("girias/add");
-		app.get('/girias', function(req,res)
-		{
-			var connection = app.config.dbConnection();
-			var expressoesModel = app.app.models.expressoesModel;
-			expressoesModel.getGiria(connection, function(error, result)
-			{
-				res.render('girias/giria', {girias : result});
-			})
-		});
-	}
+
+module.exports = function(app)
+{
+	//var connection = dbConnection();
+	app.get('/giria', function(req,res)
+	{
+		app.app.controllers.noticias.noticia(app, req, res);
+	});
+
+	app.get('/girias', function(req,res)
+	{
+		app.app.controllers.noticias.noticias(app, req, res);
+	});
+
+	app.post('/busca', function(req,res)
+	{
+		app.app.controllers.noticias.busca(app, req, res);
+	});
+
+	app.get('/arquivar', function(req,res)
+	{
+		app.app.controllers.noticias.excluir(app, req, res);
+	});
 }

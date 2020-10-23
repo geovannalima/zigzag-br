@@ -1,4 +1,4 @@
-module.exports = function(app){
+module.exports = function(app) {
 	app.get('/add_giria', function(req,res)
 	{
 		res.render('girias/add');
@@ -9,9 +9,9 @@ module.exports = function(app){
 		var giria = req.body;
 
 		var connection = app.config.dbConnection();
-		var expressoesModel = app.app.models.expressoesModel;
+		var expressoesDAO = app.app.models.expressoesDAO;
 
-		expressoesModel.salvarGiria(giria, connection, function(error, result)
+		expressoesDAO.salvarGiria(giria, connection, function(error, result)
 		{
 			if(error){
 				res.send(error)
@@ -24,9 +24,9 @@ module.exports = function(app){
 	app.get('/giria', function(req,res)
 	{
 		var connection = app.config.dbConnection();
-		var expressoesModel = app.app.models.expressoesModel;
+		var expressoesDAO = app.app.models.expressoesDAO;
 
-		expressoesModel.getGiria(connection, function(error, result)
+		expressoesDAO.getGiria(connection, function(error, result)
 		{
 			res.render('girias/giria', {girias : result});
 		})

@@ -1,3 +1,63 @@
 body{
 	background:#Fffdd0;
 }
+
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo{
+	width: 140px;
+	height: 98px;
+}
+
+.login{
+	margin-top: 30px;
+}
+
+.navbar{
+	background: black;
+	float: bottom;
+	text-decoration: all;
+	height: 2px;
+	float-bottom: all;
+}
+
+.nav-navbar{
+	display: block;
+	padding: 5px;
+	display: flex;
+}
+
+.nav-navbar li{
+	margin-left: 30px;
+	list-style-type: none;
+}
+
+.nome_usuario{
+	color: #008000;
+	display: block;
+}
+
+.exp_expressao{
+	color: #000;
+	font-size:22px;
+	text-decoration: none;
+}
+
+.explic_expressao{
+	color: #333;
+	margin-right: 10px;
+}
+
+/*.ver_mais{
+	text-align: center;
+	background: #fffdd0;
+	padding: 20px;
+*/
