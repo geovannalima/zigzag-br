@@ -3,10 +3,30 @@
 		<head>
 			<meta charset="utf-8"/>
 			<title>ZigZag Brasileiro</title>
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="shortcut icon" href="imagens/favicon-2.ico"/>
 		</head>
 	<body>
+		<div>
+			<nav class="default">
+				<div class="container">
+					<img src="imagens/zigzag_logo.png" class="logo"/>
+
+					<ul class="nav-navbar">
+						<li><a href="/add_giria">Cadastrar gíria</a></li>
+						<li><a href="/">Sobre</a></li>
+					</ul>
+				</div>
+
+				<nav class="navbar navbar-default">
+					<div id="navbar" class="navbar-hm"></div>
+				</nav>
+				
+			</nav>
+			</div>
 		<div action="/pesquisa">
-			<p><input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar gíria ou expressão"/></p>
+			<h1>Pesquisar</h1>
+			<p>Pesquisar: <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar gíria ou expressão"/></p>
 			<p>Pesquisar por estado: <select name="estados-brasil">
 				<option value="" selected>Selecione um estado</option>
 				<option value="AC">Acre</option>

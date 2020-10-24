@@ -3,13 +3,34 @@
 		<head>
 			<meta charset="utf-8"/>
 			<title>ZigZag Brasileiro</title>
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="shortcut icon" href="imagens/favicon-2.ico"/>
 		</head>
 	<body>
+		<div>
+			<nav class="default">
+				<div class="container">
+					<img src="imagens/zigzag_logo.png" class="logo"/>
+
+					<ul class="nav-navbar">
+						<li><a href="/buscar">Pesquisar</a></li>
+						<li><a href="/add_giria">Cadastrar gíria</a></li>
+						<li><a href="/">Sobre</a></li>
+					</ul>
+				</div>
+
+				<nav class="navbar navbar-default">
+					<div id="navbar" class="navbar-hm"></div>
+				</nav>
+				
+			</nav>
+			</div>
 		<h1>Fazer login</h1>
 		<form action="/login" method="post">
 			<p>E-mail: <input type="text" id="email" name="email" placeholder="Insira seu e-mail"/></p>
 			<p>Senha: <input type="password" id="senha" name="senha" placeholder="Insira sua senha"/></p>
 			<input type="submit" value="Fazer login"/>
 		</form>
+		<p><a href="/cadastro">Cadastrar-se</a></p>
 	</body>
 </html>
