@@ -78,6 +78,15 @@ a{
 	color: #333;
 	margin-right: 10px;
 }
+.pesquisa{
+	display: flex;
+	padding: 3px;
+	padding: 5px;
+}
+.lupa{
+	width: 30px;
+	height: 28px;
+}
 
 /*.ver_mais{
 	text-align: center;

@@ -10,9 +10,9 @@
 		<div>
 			<nav class="default">
 				<div class="container">
-					<img src="imagens/zigzag_logo.png" class="logo"/>
-
+					<img src="imagens/zigzag_logo.png" class="logo"/>ZigZag Brasileiro
 					<ul class="nav-navbar">
+						<li><a href="/minha_conta">Minha conta</a></li>
 						<li><a href="/add_giria">Cadastrar gíria</a></li>
 						<li><a href="/">Sobre</a></li>
 					</ul>
@@ -24,11 +24,11 @@
 				
 			</nav>
 			</div>
-		<div action="/pesquisa">
-			<h1>Pesquisar</h1>
-			<p>Pesquisar: <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquisar gíria ou expressão"/></p>
-			<p>Pesquisar por estado: <select name="estados-brasil">
-				<option value="" selected>Selecione um estado</option>
+		<div action="/pesquisa" class="pesquisa">
+			<img src="imagens/lupa.png" class="lupa"/>
+		    <input type="text" id="pesquisa" name="pesquisa" size="30px" placeholder="Pesquisar gíria ou expressão"/> ou
+			 <select name="estados-brasil">
+				<option value="" selected>Pesquisa por estado</option>
 				<option value="AC">Acre</option>
 				<option value="AL">Alagoas</option>
 				<option value="AP">Amapá</option>
@@ -56,8 +56,10 @@
 				<option value="SP">São Paulo</option>
 				<option value="SE">Sergipe</option>
 				<option value="TO">Tocantins</option>
-				</select></p>
+				</select>
 			<input type="submit" value="Buscar"/>
 		</div>
+		<h2>Resultados:</h2>
+		<div></div>
 	</body>
 </html>
